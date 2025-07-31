@@ -2,7 +2,7 @@ using System;
 
 namespace InheritanceDemo
 {
-    // Base class
+    // My Base class
     class Animal
     {
         public virtual void MakeSound()
@@ -31,15 +31,17 @@ namespace InheritanceDemo
 
     class Program
     {
-        static void Main(string[] args)
+       static void Main(string[] args)
         {
             Animal genericAnimal = new Animal();
             Animal dog = new Dog();
             Animal cat = new Cat();
 
-            genericAnimal.MakeSound();
+           genericAnimal.MakeSound();
             dog.MakeSound();           
-            cat.MakeSound();          
+            cat.MakeSound();           
         }
     }
 }
+
+
